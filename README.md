@@ -208,25 +208,5 @@ nvq++ -target nvidia cudaq_qec_kernel.cpp -o cudaq_qec_kernel
 
 ---
 
-## 📚 Academic Citation
-
-If you use this codebase or digital twin in your research, please cite the foundational Nature paper:
-
-```bibtex
-@article{sivak2026reinforcement,
-  title={Reinforcement learning control of quantum error correction},
-  author={Sivak, Volodymyr and Morvan, Alexis and Broughton, Michael and Corti{\~n}as, Rodrigo G. and Bausch, Johannes and Senior, Andrew W. and Neeley, Matthew and Eickbusch, Alec and Shutty, Noah and Beni, Laleh Aghababaie and others},
-  journal={Nature},
-  volume={655},
-  number={8125},
-  pages={879--884},
-  year={2026},
-  publisher={Nature Publishing Group},
-  doi={10.1038/s41586-026-10759-2}
-}
-```
-
----
-
 ## 📄 License
 This project is open-source under the [Apache License 2.0](LICENSE).
