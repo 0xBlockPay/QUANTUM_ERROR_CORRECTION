@@ -123,26 +123,9 @@ The framework operates on two synchronized levels:
 
 ```
 ├── quantum_code/
-│   ├── cudaq_qec_agent.py      # Production Python CUDA-Q script (PEPG + Factor Graph + Decoder Steering)
-│   ├── cudaq_qec_kernel.cpp    # High-performance C++20 CUDA-Q kernel for DGX Quantum
-│   ├── requirements.txt        # Conda / pip dependencies (cuQuantum, PyTorch, PyMatching)
-│   ├── Dockerfile              # NVIDIA NGC cuda-quantum container definition
+│   ├── cudaq_cuq_agent.py      # Production Python CUDA-Q script (PEPG + Factor Graph + Decoder Steering)
+│   ├── cudaq_cuq_kernel.cpp    # High-performance C++20 CUDA-Q kernel for DGX Quantum
 │   └── README.md               # Quickstart guide
-├── src/
-│   ├── quantum/
-│   │   ├── surfaceCode.ts      # Rotated surface code lattice (d=3, d=5) generator
-│   │   ├── simulationEngine.ts # Real-time simulation engine (Surrogate C, drift, factor graph)
-│   │   └── cudaqSourceCode.ts  # Source repository code exporter
-│   ├── components/
-│   │   ├── SurfaceCodeLattice.tsx   # Interactive 2D SVG transmon lattice & defect tracker
-│   │   ├── RLAgentPanel.tsx         # Factor graph visualizer, PEPG Gaussian policy, Decoder toggle
-│   │   ├── TelemetryCharts.tsx      # Scientific charts (Fidelity, Surrogate C, Willow milestones)
-│   │   ├── DisturbanceControl.tsx   # Stress-testing injector (flux jumps, thermal spikes, detuning)
-│   │   ├── CodeStudio.tsx           # Full in-browser IDE with terminal runner & export
-│   │   └── ScientificPaperView.tsx  # Interactive Nature 2026 paper breakdown
-│   ├── types/quantum.ts        # TypeScript interfaces & physics types
-│   ├── App.tsx                 # Main workstation dashboard
-│   └── main.tsx                # Entry point
 ```
 
 ---
